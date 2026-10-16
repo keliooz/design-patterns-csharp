@@ -11,7 +11,7 @@ namespace DesignPatterns.Behavioral.Strategy.Bad;
 /// </summary>
 public class LegacyShippingCalculator
 {
-    public decimal Calculate(string method, decimal weightKg, decimal distanceKm)
+    public static decimal Calculate(string method, decimal weightKg, decimal distanceKm)
     {
         if (method == "standard")
         {

@@ -81,10 +81,9 @@ public class ShippingStrategyTests
     public void Refactoring_KeepsTheLegacyBehavior(string method)
     {
         // Teste de caracterização: a versão com Strategy devolve o mesmo que a versão com if/else.
-        var legacy = new LegacyShippingCalculator();
         var withStrategy = CreateCalculator();
 
-        var expected = legacy.Calculate(method, weightKg: 2m, distanceKm: 100m);
+        var expected = LegacyShippingCalculator.Calculate(method, weightKg: 2m, distanceKm: 100m);
         var actual = withStrategy.Calculate(method, TwoKgHundredKm);
 
         Assert.Equal(expected, actual);
