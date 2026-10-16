@@ -28,6 +28,7 @@ dotnet test
 ├── src/DesignPatterns/
 │   ├── Creational/
 │   ├── Structural/
+│   │   └── Decorator/
 │   └── Behavioral/
 │       └── Strategy/
 │           ├── Bad/               # versão sem o padrão
@@ -57,7 +58,7 @@ Legenda: ✅ pronto · ⬜ a fazer
 | Adapter | Integrar gateway de pagamento de terceiros | ⬜ |
 | Bridge | Tipos de notificação × canais de envio | ⬜ |
 | Composite | Combos e kits dentro de um carrinho | ⬜ |
-| Decorator | Logging e cache em cima de um repositório | ⬜ |
+| [Decorator](src/DesignPatterns/Structural/Decorator/README.md) | Logging e cache em cima de um repositório | ✅ |
 | Facade | Checkout simplificado sobre vários serviços | ⬜ |
 | Flyweight | Compartilhar estilos/ícones em grande volume | ⬜ |
 | Proxy | Carregamento preguiçoso e controle de acesso | ⬜ |
